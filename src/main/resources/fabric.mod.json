@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "hugo_order_helper",
+  "version": "${version}",
+  "name": "Hugo Order Helper",
+  "description": "Manual client-side auction and order profit assistant for HugoSMP.",
+  "authors": ["Use AI user"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.hugohelper.HugoOrderHelperClient"]
+  },
+  "mixins": ["hugo_order_helper.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
